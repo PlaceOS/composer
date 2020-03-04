@@ -1,8 +1,8 @@
 # Angular 8+ Composer Library
 
-[![Travis](https://travis-ci.org/acaengine/composer.svg)](https://travis-ci.org/acaengine/composer)
-[![npm version](https://badge.fury.io/js/%40acaengine%2Fcomposer.svg)](https://badge.fury.io/js/%40acaengine%2Fcomposer)
-[![david-dm](https://david-dm.org/acaengine/composer.svg)](https://david-dm.org/acaengine/composer)
+[![Travis](https://travis-ci.org/PlaceOS/composer.svg)](https://travis-ci.org/PlaceOS/composer)
+[![npm version](https://badge.fury.io/js/%40PlaceOS%2Fcomposer.svg)](https://badge.fury.io/js/%40PlaceOS%2Fcomposer)
+[![david-dm](https://david-dm.org/PlaceOS/composer.svg)](https://david-dm.org/PlaceOS/composer)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
@@ -21,4 +21,4 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Installation
 
-You install the library from npm using `npm install @acaengine/composer`;
+You install the library from npm using `npm install placeos/composer`;

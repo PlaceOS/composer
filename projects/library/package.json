@@ -1,0 +1,23 @@
+{
+  "name": "@placeos/composer",
+  "version": "0.0.0-development",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "angular",
+    "composer"
+  ],
+  "description": "Engine Composer API for Angular 8+",
+  "homepage": "https://github.com/PlaceOS/composer#readme",
+  "bugs": {
+      "url": "https://github.com/PlaceOS/composer/issues"
+  },
+  "dependencies": {
+    "@placeos/ts-client": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "^8.0.0",
+    "@angular/core": "^8.0.0"
+  }
+}

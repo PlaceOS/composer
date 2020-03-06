@@ -20,7 +20,8 @@ import {
     EngineRepositoriesService,
     EngineOAuthSourcesService,
     EngineSAMLSourcesService,
-    EngineLDAPSourcesService
+    EngineLDAPSourcesService,
+    EngineClustersService
 } from '@placeos/ts-client';
 
 @Injectable({
@@ -129,5 +130,10 @@ export class ComposerService {
     /** HTTP service for engine auth sources */
     public get zones(): EngineZonesService {
         return PlaceOS.zones;
+    }
+
+    /** HTTP service for engine auth sources */
+    public get cluters(): EngineClustersService {
+        return PlaceOS.clusters;
     }
 }

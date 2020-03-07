@@ -133,7 +133,7 @@ export class ComposerService {
     }
 
     /** HTTP service for engine auth sources */
-    public get cluters(): EngineClustersService {
+    public get clusters(): EngineClustersService {
         return PlaceOS.clusters;
     }
 }

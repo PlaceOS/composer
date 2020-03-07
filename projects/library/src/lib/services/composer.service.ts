@@ -132,7 +132,7 @@ export class ComposerService {
         return PlaceOS.zones;
     }
 
-    /** HTTP service for engine auth sources */
+    /** HTTP service for engine auth sources  */
     public get clusters(): EngineClustersService {
         return PlaceOS.clusters;
     }

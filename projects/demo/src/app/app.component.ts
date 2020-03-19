@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { first } from 'rxjs/operators';
 
 import { ComposerService } from 'projects/library/src/lib/services/composer.service';
 import { PlaceOSOptions, EngineZone, EngineSettings } from '@placeos/ts-client';
@@ -25,12 +26,14 @@ export class AppComponent implements OnInit {
 
     constructor(private _composer: ComposerService) { }
 
-    public ngOnInit(): void {
+    public async ngOnInit() {
         window.composer = this._composer;
         window.EngineZone = EngineZone;
         window.EngineSettings = EngineSettings;
         window.debug = true;
         this.initialiseComposer();
+        await this._composer.initialised.pipe(first(_ => _)).toPromise();
+        this.model.user = await this._composer.users.current()
     }
 
     public initialiseComposer(tries: number = 0) {

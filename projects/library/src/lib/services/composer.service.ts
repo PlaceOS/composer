@@ -15,7 +15,6 @@ import {
     EngineDomainsService,
     PlaceOSOptions,
     EngineTriggersService,
-    EngineSystemTriggersService,
     EngineSettingsService,
     EngineRepositoriesService,
     EngineOAuthSourcesService,
@@ -110,11 +109,6 @@ export class ComposerService {
     /** HTTP service for engine triggers */
     public get triggers(): EngineTriggersService {
         return PlaceOS.triggers;
-    }
-
-    /** HTTP service for engine system triggers */
-    public get system_triggers(): EngineSystemTriggersService {
-        return PlaceOS.system_triggers;
     }
 
     /** HTTP service for engine auth sources */

@@ -14,7 +14,7 @@
       "url": "https://github.com/PlaceOS/composer/issues"
   },
   "dependencies": {
-    "@placeos/ts-client": "^2.0.0"
+    "@placeos/ts-client": "^2.1.0"
   },
   "peerDependencies": {
     "@angular/common": "^8.0.0",

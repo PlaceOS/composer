@@ -20,7 +20,8 @@ import {
     EngineOAuthSourcesService,
     EngineSAMLSourcesService,
     EngineLDAPSourcesService,
-    EngineClustersService
+    EngineClustersService,
+    PlaceMQTTBrokerService
 } from '@placeos/ts-client';
 
 @Injectable({
@@ -56,9 +57,15 @@ export class ComposerService {
     public get bindings(): EngineBindingService {
         return PlaceOS.bindings;
     }
+
     /** HTTP service for engine applications */
     public get applications(): EngineApplicationsService {
         return PlaceOS.applications;
+    }
+
+    /** HTTP service for MQTT Brokers */
+    public get brokers(): PlaceMQTTBrokerService {
+        return PlaceOS.brokers;
     }
 
     /** HTTP service for engine auth sources */
